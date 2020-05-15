@@ -4,6 +4,8 @@ h1 {
 }
 
 .robots {
+	display: flex;
+	justify-content: center;
 }
 
 .head, 
@@ -35,7 +37,7 @@ h1 {
 .upper_body { 
 	width: 300px; 
 	height: 150px;
-	display: flex; 
+	display: flex;
 } 
 
 .left_arm, .right_arm { 
@@ -59,11 +61,11 @@ h1 {
 } 
 
 .lower_body { 
-	width: 200px; 
-	height: 200px;
+	width: 200px;
 	/* This is another useful property. Hmm what do you think it does?*/
 	margin: 0 auto;
-
+	display: flex;
+	flex-direction: row;
 } 
 
 .left_leg, .right_leg { 
@@ -88,6 +90,14 @@ h1 {
 	margin-left: 30px; 
 }
 
+.right_leg:hover {
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-o-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+}
+
 .left_eye, .right_eye { 
 	width: 20px; 
 	height: 20px; 
@@ -95,9 +105,7 @@ h1 {
 	background-color: white;  
 } 
 
-.left_eye { 
-	/* These properties are new and you haven't encountered
-	in this course. Check out CSS Tricks to see what it does! */
+.left_eye {
 	position: relative; 
 	top: 100px; 
 	left: 40px; 
