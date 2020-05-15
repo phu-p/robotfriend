@@ -50,9 +50,25 @@ h1 {
 	margin-right: 10px; 
 }
 
+.left_arm:hover {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
 .right_arm { 
 	margin-left: 10px; 
-} 
+}
+
+.right_arm:hover {
+	-webkit-transform: rotate(-120deg);
+	-moz-transform: rotate(-120deg);
+	-o-transform: rotate(-120deg);
+	-ms-transform: rotate(-120deg);
+	transform: rotate(-120deg);
+}
 
 .torso { 
 	width: 200px; 
